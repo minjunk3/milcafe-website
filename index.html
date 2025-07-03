@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.I.L CAFE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">M.I.L CAFE</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="nos-services.html">NOS SERVICES</a></li>
+          <li><a href="a-propos.html">À PROPOS DE MILCAFE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="politique.html">POLITIQUE DE CONFIDENTIALITÉ</a></li>
+        </ul>  
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>Bienvenue chez M.I.L Cafe</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="services">
+      <h2>Prestations de service</h2>
+      <p><strong>Distributeurs automatiques – Boissons chaudes, froides & snacks</strong><br>
+      Installation gratuite / Paiement à la consommation / Entretien inclus</p>
+
+      <p>Offrez à vos collaborateurs, clients ou visiteurs un service de pause moderne, pratique et sans contrainte.</p>
+
+      <p>Nous installons gratuitement des distributeurs automatiques adaptés à vos besoins :</p>
+      <ul>
+        <li><strong>Boissons chaudes</strong> : café, espresso, cappuccino, chocolat chaud, thé…</li>
+        <li><strong>Boissons froides</strong> : eau, sodas, jus, boissons énergisantes…</li>
+        <li><strong>Snacks sucrés & salés</strong> : barres chocolatées, chips, biscuits, bonbons…</li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <ul>
+        <li>✅ Installation et mise à disposition 100 % gratuites</li>
+        <li>✅ Sans engagement – vous ne payez que les consommations</li>
+        <li>✅ Entretien, réassort et maintenance pris en charge par nos soins</li>
+        <li>✅ Paiement simple et rapide</li>
+      </ul>
+    
+      <h3>Pour qui ?</h3>
+      <ul>
+        <li>✔️ Entreprises – PME & grandes structures</li>
+        <li>✔️ Salles d’attente, lieux publics, collectivités</li>
+        <li>✔️ Salles de sport, garages, établissements scolaires, etc.</li>
+        <li>💡 <strong>Une solution de pause complète, sans frais.</strong></li>
+      </ul>
+    </section>
+    
+    <section class="machines">
+      <div class="machine">
+        <img src="images/vending1.jpg" alt="Distributeur boisson froide & Snack">
+        <h4>Distributeur boisson froide & Snack</h4>
+        <button>Plus d’informations</button>
+      </div>
+      <div class="machine">
+        <img src="images/vending2.jpg" alt="Distributeur boisson chaude">
+        <h4>Distributeur boisson chaude</h4>
+        <button>Plus d’informations</button>
+      </div>
+    </section>
+    
+    <section class="contact">
+      <h3>Contactez-nous</h3>
+      <p>Téléphone: 06.19.95.53.95</p>
+      <p>Mail: mil.cafe77@gmail.com</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h3>Qui sommes nous ?</h3>
+    <p>M.I.L.Cafe est un distributeur de boissons chaudes situé à Mormant (77), en France.  
+       Nous mettons un point d'honneur à vous offrir des produits de qualité et un service irréprochable.</p>
+  </footer>  
+
+  <!-- ✅ Highlight current nav link -->
+  <script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".navbar a");
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>

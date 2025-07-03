@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>À Propos - M.I.L Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">M.I.L CAFE</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="nos-services.html">NOS SERVICES</a></li>
+          <li><a href="a-propos.html">À PROPOS DE MILCAFE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="politique.html">POLITIQUE DE CONFIDENTIALITÉ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>À Propos de M.I.L.Cafe</h1>
+    </div>
+  </header>
+
+  <main class="about-main">
+    <div class="about-wrapper">
+      <div class="about-left">
+        <img src="images/milcafe-poster.jpg" alt="Affiche machine à café M.I.L Cafe">
+      </div>
+      <div class="about-right">
+        <h2>☕ Vivez une pause café irrésistible avec M.I.L.Cafe !</h2>
+  
+        <h3>🌸 Des instants savoureux, sur mesure et conviviaux</h3>
+        <ul>
+          <li><strong>Une entreprise familiale depuis 2020</strong>, à votre service pour transformer chaque pause en moment de plaisir.</li>
+          <li><strong>En Île-de-France</strong>, nous installons des machines à boissons chaudes, fraîches et des distributeurs de snacks sucrés-salés adaptés à vos envies.</li>
+        </ul>
+  
+        <h3>🌿 Pourquoi M.I.L.Cafe fait la différence</h3>
+        <ul>
+          <li><strong>Proximité</strong> : un interlocuteur dédié, présent et à l’écoute.</li>
+          <li><strong>Flexibilité</strong> : offres personnalisables selon vos habitudes.</li>
+          <li><strong>Fiabilité</strong> : équipements performants, entretenus régulièrement.</li>
+        </ul>
+  
+        <h3>✨ Une satisfaction client au cœur de tout</h3>
+        <ul>
+          <li><strong>Fluide</strong> : installation simplifiée.</li>
+          <li><strong>Gourmand</strong> : sélection raffinée de cafés et snacks.</li>
+          <li><strong>Sans contrainte</strong> : accompagnement complet et professionnel.</li>
+        </ul>
+  
+        <p><strong>M.I.L.Cafe, bien plus qu’un fournisseur…</strong><br>
+        <em>Contactez-nous dès maintenant</em> pour créer un lieu de pause convivial et attendu.</p>
+  
+        <div class="cta-banner">
+          <h3>Besoin d'une pause café ? Contactez-nous dès maintenant !</h3>
+          <a class="cta-button" href="contact.html">Contactez nous</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-bottom">
+    <p>&copy; 2025 milcafe</p>
+  </footer>
+
+  <script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".navbar a");
+    navLinks.forEach(link => {
+      const linkHref = link.getAttribute("href");
+      if (linkHref === currentPage || (currentPage === "" && linkHref === "index.html")) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>

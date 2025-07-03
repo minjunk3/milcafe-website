@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Services - M.I.L Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">M.I.L CAFE</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="nos-services.html">NOS SERVICES</a></li>
+          <li><a href="a-propos.html">À PROPOS DE MILCAFE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="politique.html">POLITIQUE DE CONFIDENTIALITÉ</a></li>
+        </ul> 
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>Nos services</h1>
+    </div>
+  </header>
+
+  <main class="main-services">
+    <section class="intro-text">
+      <p>Chez M.I.L.Cafe, nous proposons une sélection de cafés DELTA et du chocolat SUCHARD, pour satisfaire tous les amateurs de boissons chaudes.</p>
+    </section>
+
+    <section class="service-detail">
+      <div class="service-image">
+        <img src="images/delta-machine.jpg" alt="Café Delta Machine">
+      </div>
+      <div class="service-text">
+        <h2>Café DELTA</h2>
+        <p>Nous avons opté pour un café portugais, afin de vous offrir une expérience riche en saveurs et en arômes. Savourez chaque gorgée de ce café soigneusement sélectionné pour son caractère unique.</p>
+        <p>Nos boissons chaudes sont soigneusement sélectionnées pour offrir une expérience gustative exceptionnelle à nos clients.</p>
+        <ul>
+          <li>Arômes riches</li>
+          <li>Saveurs intenses</li>
+          <li>Sélection premium</li>
+        </ul>
+        <button>Contactez nous</button>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <p>“Les boissons chaudes de M.I.L.Cafe sont tout simplement délicieuses. Un service au top !”<br><strong>Justine</strong></p>
+    </section>
+  </main>
+
+  <footer class="footer-bottom">
+    <p>&copy; 2025 milcafe</p>
+  </footer>
+
+  <!-- ✅ Auto-highlight active nav link -->
+  <script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".navbar a");
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>

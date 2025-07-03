@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité - M.I.L Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">M.I.L CAFE</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="nos-services.html">NOS SERVICES</a></li>
+        <li><a href="a-propos.html">À PROPOS DE MILCAFE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="politique.html">POLITIQUE DE CONFIDENTIALITÉ</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="hero">
+    <h1>Information</h1>
+  </div>
+</header>
+
+<main class="privacy-main">
+  <div class="privacy-content">
+    <p>Nous attachons une grande importance à la protection de vos données personnelles. Ce site internet a pour vocation exclusive de présenter nos services de pose de distributeurs de machines à café. Aucune donnée n’est collectée à des fins commerciales ou publicitaires.</p>
+
+    <h3>1. Données collectées</h3>
+    <p>Notre site ne collecte pas automatiquement de données personnelles, hormis celles strictement nécessaires à son bon fonctionnement.</p>
+    <p><strong>Données pouvant être collectées :</strong></p>
+    <ul>
+      <li>Adresse IP (à des fins de sécurité et statistiques anonymes via l’outil de mesure d’audience, si activé)</li>
+    </ul>
+
+    <h3>2. Finalité des traitements</h3>
+    <p>Les données sont uniquement utilisées pour :</p>
+    <ul>
+      <li>Assurer la sécurité et le bon fonctionnement technique du site</li>
+    </ul>
+
+    <h3>3. Cookies</h3>
+    <p>Ce site utilise uniquement des cookies <strong>techniques nécessaires</strong> à son fonctionnement.<br>
+    Aucun cookie publicitaire ou de suivi tiers n’est installé sans votre consentement explicite.</p>
+    <p>Vous pouvez refuser ou paramétrer l’usage des cookies en cliquant sur le bandeau d’information lors de votre première visite.</p>
+
+    <h3>4. Durée de conservation des données</h3>
+    <p><strong>Cookies</strong> : selon leur nature, les cookies peuvent être conservés jusqu’à <strong>13 mois</strong> maximum.</p>
+
+    <h3>5. Vos droits</h3>
+    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+    <ul>
+      <li>Droit d’accès</li>
+      <li>Droit de rectification</li>
+      <li>Droit à l’effacement (oubli)</li>
+      <li>Droit à la limitation du traitement</li>
+      <li>Droit d’opposition</li>
+      <li>Droit à la portabilité des données (dans certains cas)</li>
+    </ul>
+    <p>Pour exercer vos droits, vous pouvez nous contacter à l’adresse : <strong>mil.cafe77@gmail.com</strong></p>
+
+    <h3>6. Sécurité</h3>
+    <p>Nous mettons en œuvre toutes les mesures techniques et organisationnelles nécessaires pour protéger vos données contre toute perte, utilisation détournée, accès non autorisé ou divulgation.</p>
+
+    <h3>7. Modifications de cette politique</h3>
+    <p>Cette politique peut être mise à jour à tout moment pour refléter les changements législatifs ou techniques.<br>
+    Nous vous invitons à la consulter régulièrement.</p>
+  </div>
+</main>
+
+<footer class="footer-bottom">
+  <p>&copy; 2025 milcafe</p>
+</footer>
+
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".navbar a");
+  navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage || (currentPage === "" && link.getAttribute("href") === "index.html")) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>
