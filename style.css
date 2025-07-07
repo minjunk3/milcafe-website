@@ -411,25 +411,34 @@ body {
     background-color: #8c3939;
   }
 
-  /* politique page */
+  /* Politique page */
   .privacy-main {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
   }
-  
+
+  /* Body text: default sans-serif */
   .privacy-content {
-    line-height: 1.7;
+    line-height: 1.8;
     font-size: 1.05em;
+    font-family: Arial, sans-serif;
   }
-  
+
+  /* Numbered headings: Helvetica (fallback to Arial) */
   .privacy-content h3 {
     margin-top: 30px;
     color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
   }
-  
+
+  /* Optional: Make list items spacing consistent */
   .privacy-content ul {
     padding-left: 20px;
     margin-bottom: 20px;
   }
-  
+
+  .privacy-content li {
+    line-height: 1.8;
+  }
