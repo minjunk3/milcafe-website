@@ -422,7 +422,7 @@ body {
   .privacy-content {
     line-height: 1.8;
     font-size: 1.05em;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
   }
 
   /* Numbered headings: Helvetica (fallback to Arial) */
@@ -431,6 +431,12 @@ body {
     color: #333;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
+  }
+
+  .privacy-content h1,
+  .privacy-content h2,
+  .privacy-content h3 {
+    font-family: Helvetica, Arial, sans-serif;
   }
 
   /* Optional: Make list items spacing consistent */
