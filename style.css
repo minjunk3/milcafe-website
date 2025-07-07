@@ -420,16 +420,22 @@ body {
 
   /* Body text: default sans-serif */
   .privacy-content {
-    line-height: 1.8;
     font-size: 1.05em;
     font-family: sans-serif;
+  }
+
+  /* Paragraph and list spacing adjustments */
+  .privacy-content p,
+  .privacy-content ul {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    line-height: 1.6;
   }
 
   /* Numbered headings: Helvetica (fallback to Arial) */
   .privacy-content h3 {
     margin-top: 30px;
     color: #333;
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
   }
 
@@ -446,5 +452,61 @@ body {
   }
 
   .privacy-content li {
-    line-height: 1.8;
+    line-height: 1.7;
   }
+
+  /* mobile setting improvement */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .hero {
+      font-size: 1.8em;
+      padding: 60px 20px;
+    }
+  
+    .services,
+    .privacy-main,
+    .main-services,
+    .about-main,
+    .contact-main {
+      padding: 20px;
+    }
+  
+    .service-detail {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .service-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .machine img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .navbar a {
+      padding: 8px 0;
+    }
+  
+    .navbar {
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+  
