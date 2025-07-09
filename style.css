@@ -509,4 +509,35 @@ body {
       margin-bottom: 10px;
     }
   }
+
+  /* Info buttons on the first page */
+  .info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a94442;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
   
+  .info-button:hover {
+    background-color: #8c3939;
+  }
+  
+  /* Contact button on the second page */
+  .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a94442;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .contact-button:hover {
+    background-color: #8c3939;
+  }
